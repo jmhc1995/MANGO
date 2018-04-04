@@ -64,6 +64,58 @@ Falso {
 {Numerico} {
 			System.out.println("<" + yytext() + "> - <número>");
 		}
+		
+//Instrucciones
+
+Desde {
+			System.out.println("<" + yytext() + "> - <inicio for>");
+		}
+
+Hasta {
+			System.out.println("<" + yytext() + "> - <final for>");
+		}
+
+Restar {
+			System.out.println("<" + yytext() + "> - <disminuye contador>");
+		}
+		
+Sumar {
+			System.out.println("<" + yytext() + "> - <aumenta contador>");
+		}
+
+Imprime {
+			System.out.println("<" + yytext() + "> - <print>");
+		}
+
+ImprimeCambioLinea {
+			System.out.println("<" + yytext() + "> - <println>");
+		}
+
+//Comparacion
+
+Igual {
+			System.out.println("<" + yytext() + "> - <comparación igual>");
+		}
+
+Diferente {
+			System.out.println("<" + yytext() + "> - <comparacion diferente>");
+		}
+
+MenorIgual {
+			System.out.println("<" + yytext() + "> - <comparacion menor o igual>");
+		}
+		
+MayorIgual {
+			System.out.println("<" + yytext() + "> - <comparacion mayor o igual>");
+		}
+
+Menor {
+			System.out.println("<" + yytext() + "> - <comparación menor>");
+		}
+
+Mayor {
+			System.out.println("<" + yytext() + "> - <comparacion mayor>");
+		}
 
 //ID
 
