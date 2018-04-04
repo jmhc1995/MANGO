@@ -1,0 +1,8 @@
+Funcion fibonacciRecursivo (Numero n)
+    Si n Igual 0
+        Retornar 0
+
+    Si n Igual 1
+        Retornar 1
+
+    Retornar fibonacciRecursivo(n-1) + fibonacciRecursivo(n-2)
