@@ -65,6 +65,32 @@ Falso {
 			System.out.println("<" + yytext() + "> - <número>");
 		}
 
+//Comparacion
+
+Igual {
+			System.out.println("<" + yytext() + "> - <comparación igual>");
+		}
+
+Diferente {
+			System.out.println("<" + yytext() + "> - <comparacion diferente>");
+		}
+
+MenorIgual {
+			System.out.println("<" + yytext() + "> - <comparacion menor o igual>");
+		}
+		
+MayorIgual {
+			System.out.println("<" + yytext() + "> - <comparacion mayor o igual>");
+		}
+
+Menor {
+			System.out.println("<" + yytext() + "> - <comparación menor>");
+		}
+
+Mayor {
+			System.out.println("<" + yytext() + "> - <comparacion mayor>");
+		}
+
 //ID
 
 {id} {
