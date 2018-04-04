@@ -1,3 +1,5 @@
+//Los Nameless
+
 %%
 %standalone
 %class Lexico
@@ -12,61 +14,61 @@ Numerico = -?[\d]+
 //Símbolos
 
 \[ {
-			System.out.println(yytext() + " es un símbolo");
+			System.out.println("<" + yytext() + "> - <símbolo>");
 		}
 
 \] {
-			System.out.println(yytext() + " es un símbolo");
+			System.out.println("<" + yytext() + "> - <símbolo>");
 		}
 
 Y {
-			System.out.println(yytext() + " es un símbolo");
+			System.out.println("<" + yytext() + "> - <símbolo>");
 		}
 
 O {
-			System.out.println(yytext() + " es un símbolo");
+			System.out.println("<" + yytext() + "> - <símbolo>");
 		}
 
 \( {
-			System.out.println(yytext() + " es un símbolo");
+			System.out.println("<" + yytext() + "> - <símbolo>");
 		}
 
 \) {
-			System.out.println(yytext() + " es un símbolo");
+			System.out.println("<" + yytext() + "> - <símbolo>");
 		}
 
 //Declaraciones de variables
 
 Numero {
-			System.out.println(yytext() + " es una palabra reservada");
+			System.out.println("<" + yytext() + "> - <declaración de variable>");
 		}
 
 Booleano {
-			System.out.println(yytext() + " es una palabra reservada");
+			System.out.println("<" + yytext() + "> - <declaración de variable>");
 		}
 
 Hilera {
-			System.out.println(yytext() + " es una palabra reservada");
+			System.out.println("<" + yytext() + "> - <declaración de variable>");
 		}
 
 //Valores de variables
 
 Verdadero {
-			System.out.println(yytext() + " es un valor booleano");
+			System.out.println("<" + yytext() + "> - <booleano>");
 		}
 
 Falso {
-			System.out.println(yytext() + " es un valor booleano");
+			System.out.println("<" + yytext() + "> - <booleano>");
 		}
 
 {Numerico} {
-			System.out.println(yytext() + " es un valor numérico");
+			System.out.println("<" + yytext() + "> - <número>");
 		}
 
 //ID
 
 {id} {
-			System.out.println(yytext() + " es un identificador");
+			System.out.println("<" + yytext() + "> - <identificador>");
 	 	}
 
 .|\n	{}
